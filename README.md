@@ -4,6 +4,11 @@ This is powered by Selenium in python.
 
 You need Selenium installed and also, to completely use this script, you need to have a [ChromeDriver](https://chromedriver.chromium.org/downloads) to have a Testing environment.
 
+## Tools
+- Python
+- Selenium
+- ChromeDriver
+
 ### New Feature:
 - Creating of messages spamming.
 
