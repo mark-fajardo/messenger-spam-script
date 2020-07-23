@@ -1,5 +1,10 @@
 # messenger-spam-script
-This is created for Automation of Facebook Messenger actions.
-Development of script is ongoing.
+This is created for Automation of Facebook Messenger's actions.
+This is powered by Selenium in python.
+
+You need Selenium installed and also, to completely use this script, you need to have a [ChromeDriver](https://chromedriver.chromium.org/downloads) to have a Testing environment.
+
 ### New Feature:
 - Creating of messages spamming.
+
+
