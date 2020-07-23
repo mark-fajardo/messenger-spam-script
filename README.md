@@ -9,7 +9,7 @@ You need Selenium installed and also, to completely use this script, you need to
 - Selenium
 - ChromeDriver
 
-### New Feature:
+### Feature:
 - Creating of messages spamming.
 
 
