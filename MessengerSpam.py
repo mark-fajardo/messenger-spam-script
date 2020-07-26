@@ -11,7 +11,8 @@ class MessengerSpam:
     # MessengerSpam constructor
     # Set spam tries
     def __init__(self, tries):
-        self.oBrowser = webdriver.Chrome('D:\DOWNLOADS\chromedriver_83\chromedriver')
+        # Default is Chrome for Windows
+        self.oBrowser = webdriver.Chrome('.\chrome-driver\84\chromedriver_win32\chromedriver')
         self.iTries = tries
 
     # Login user with the given params
@@ -71,11 +72,13 @@ class MessengerSpam:
 # python MessengerSpam.py <action> <username> <password> <username_of_target> <tries>
 oMessengerSpam = MessengerSpam(10)
 aParams = sys.argv
+aParamsLen = len(aParams)
+print(aParamsLen)
 
-if aParams[1] == 'init':
+if aParamsLen >= 2 and aParams[1] == 'init':
 
     # Username to spam must be existing
-    if aParams[4] == '':
+    if aParamsLen > 5:
         print('Username to spam is needed...')
 
     else:
@@ -92,6 +95,6 @@ if aParams[1] == 'init':
             print('Username and password is a must...')
 
         # Number of tries is not required, but you can set it.
-        if aParams[5] != '':
+        if aParamsLen >= 6:
             oMessengerSpam.set_tries(aParams[5])
         oMessengerSpam.spam_anyone()
