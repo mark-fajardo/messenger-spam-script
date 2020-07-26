@@ -1,3 +1,4 @@
 ## 1.0.0
 ### Added
-- Messages spamming in Facebook Messenger
+- Spamming messages to specific user
+- Added chromedriver files for Chrome v84
